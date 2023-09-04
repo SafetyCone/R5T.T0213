@@ -15,6 +15,20 @@ namespace R5T.T0213.Extensions
             return output;
         }
 
+        /// <inheritdoc cref="IFullAssemblyName"/>
+        public IFullAssemblyName ToFullAssemblyName(string value)
+        {
+            var output = new FullAssemblyName(value);
+            return output;
+        }
+
+        /// <inheritdoc cref="IShortAssemblyName"/>
+        public IShortAssemblyName ToShortAssemblyName(string value)
+        {
+            var output = new ShortAssemblyName(value);
+            return output;
+        }
+
         /// <inheritdoc cref="IMethodName"/>
         public IMethodName ToMethodName(string value)
         {

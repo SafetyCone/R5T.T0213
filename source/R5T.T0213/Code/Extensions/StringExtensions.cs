@@ -11,6 +11,18 @@ namespace R5T.T0213.Extensions
             return Instances.StringOperator_Extensions.ToAssemblyName(value);
         }
 
+        /// <inheritdoc cref="IStringOperator.ToFullAssemblyName(string)"/>
+        public static IFullAssemblyName ToFullAssemblyName(this string value)
+        {
+            return Instances.StringOperator_Extensions.ToFullAssemblyName(value);
+        }
+
+        /// <inheritdoc cref="IStringOperator.ToShortAssemblyName(string)"/>
+        public static IShortAssemblyName ToShortAssemblyName(this string value)
+        {
+            return Instances.StringOperator_Extensions.ToShortAssemblyName(value);
+        }
+
         /// <inheritdoc cref="IStringOperator.ToMethodName(string)"/>
         public static IMethodName ToMethodName(this string value)
         {
